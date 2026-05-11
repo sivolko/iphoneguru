@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/pagination";
+
+@theme {
+  --color-whatsapp: #25D366;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* height of the fixed navbar (h-16) */
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Swiper custom overrides */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 450px;
+  transition: transform 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 380px;
+    height: 500px;
+  }
+}
+
